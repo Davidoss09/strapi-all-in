@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * Cron config that gives you an opportunity
  * to run scheduled jobs.
@@ -16,4 +14,4 @@ module.exports = {
   // '0 1 * * 1': () => {
   //
   // }
-};
+}

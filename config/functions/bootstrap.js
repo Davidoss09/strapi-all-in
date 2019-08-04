@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * An asynchronous bootstrap function that runs before
  * your application gets started.
@@ -9,5 +7,5 @@
  */
 
 module.exports = cb => {
-  cb();
-};
+  cb()
+}
