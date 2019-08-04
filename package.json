@@ -20,7 +20,7 @@
     "clean:install": "rimraf node_modules && rimraf package-lock.json && npm i"
   },
   "lint-staged": {
-    "*.(js)": [
+    "*.js": [
       "npm run lint:scripts",
       "git add"
     ]
