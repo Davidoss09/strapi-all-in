@@ -1,0 +1,71 @@
+{
+  "name": "strapi-all-in",
+  "version": "0.1.0",
+  "description": "Strapi starter for universal api's",
+  "license": "MIT",
+  "author": "Gherciu Gheorghe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gherciu/strapi-all-in"
+  },
+  "bugs": {
+    "url": "https://github.com/Gherciu/strapi-all-in/issues"
+  },
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "lint:scripts": "eslint ./ --max-warnings=0",
+    "fix:scripts": "eslint ./ --fix --max-warnings=0",
+    "clean:install": "rimraf node_modules && rimraf package-lock.json && npm i"
+  },
+  "lint-staged": {
+    "*.(js)": [
+      "npm run lint:scripts",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.0",
+    "eslint": "^6.0.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-react": "^7.14.0",
+    "husky": "^3.0.2",
+    "lint-staged": "^9.2.0",
+    "pm2": "^3.5.1",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "strapi": "3.0.0-beta.14",
+    "strapi-admin": "3.0.0-beta.14",
+    "strapi-utils": "3.0.0-beta.14",
+    "strapi-plugin-settings-manager": "3.0.0-beta.14",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.14",
+    "strapi-plugin-content-manager": "3.0.0-beta.14",
+    "strapi-plugin-users-permissions": "3.0.0-beta.14",
+    "strapi-plugin-email": "3.0.0-beta.14",
+    "strapi-plugin-upload": "3.0.0-beta.14",
+    "strapi-hook-bookshelf": "3.0.0-beta.14",
+    "strapi-hook-knex": "3.0.0-beta.14",
+    "knex": "latest",
+    "sqlite3": "latest"
+  },
+  "strapi": {
+    "uuid": "b57ee755-7940-425d-82ff-be25a117f0a8"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  }
+}
