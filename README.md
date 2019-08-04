@@ -7,7 +7,7 @@ This is a starter application using strapi.js
 ### Getting started
 
 - Clone strapi-all-in starter: `git clone https://github.com/Gherciu/strapi-all-in.git`
-- Start dev server: `npm run develop`
+- Start dev server: `npm run start`
 
 ### Features
 
@@ -17,7 +17,7 @@ This is a starter application using strapi.js
 
 - Ccreate file `.env.production` the content should be the same as in `.env.development`
 - Build the project: `npm run build`
-- Start production server: `npm run start`
+- Start production server: `npm run serve`
 
 ---
 
