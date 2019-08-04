@@ -13,7 +13,9 @@ module.exports = {
       name: process.env.APP_NAME,
       script: 'npm',
       args: 'start',
-      env: JSON.stringify(process.env),
+      env: {
+        NODE_ENV: process.env.NODE_ENV,
+      },
     },
   ],
 }
