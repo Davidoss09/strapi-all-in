@@ -15,7 +15,7 @@ This is a starter application using strapi.js
 
 ### When ready to build for production
 
-- Ccreate file `.env.production` the content should be the same as in `.env.development`
+- Create file `.env.production` the content should be the same as in `.env.development`
 - Build the project: `npm run build`
 - Start production server: `npm run serve`
 
